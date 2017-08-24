@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<IDMEF-Message version="1.0">
+	<Alert messageid="2E4A3926-B1B9-41E3-89AE-B6B474EB0A54">
+		<Analyzer/>
+		<CreateTime ntpstamp="0xbc72703d.0x00000000">2000-03-09T18:47:25+02:00</CreateTime>
+		<DetectTime ntpstamp="0xd6d7e08f.0x00000000">2014-03-22T10:12:31Z</DetectTime>
+		<Source interface="abxd" spoofed="yes">
+			<Node>
+				<name>abc.def</name>
+				<Address category="ipv4-addr">
+					<address>93.184.216.119</address>
+				</Address>
+				<Address category="ipv6-addr">
+					<address>2001:db8::2:1</address>
+				</Address>
+				<Address category="ipv6-addr">
+					<address>2001:db8:a::123/64</address>
+				</Address>
+				<Address category="mac">
+					<address>01:23:45:67:89:ab</address>
+				</Address>
+				<Address category="mac">
+					<address>01:23:45:67:89:cd</address>
+				</Address>
+				<Address category="e-mail">
+					<address>example@example.com</address>
+				</Address>
+				<Address category="e-mail">
+					<address>example2@example2.com</address>
+				</Address>
+			</Node>
+			<Service>
+				<portlist>24508</portlist>
+				<protocol>epmap</protocol>
+			</Service>
+		</Source>
+		<Source interface="abxd2" spoofed="no">
+			<Node>
+				<name>abc.def2</name>
+				<Address category="ipv4-addr">
+					<address>93.184.216.120</address>
+				</Address>
+				<Address category="ipv6-addr">
+					<address>2001:db8::2:22</address>
+				</Address>
+				<Address category="ipv6-addr">
+					<address>2001:db8:a::123/65</address>
+				</Address>
+				<Address category="mac">
+					<address>01:23:45:67:89:a2</address>
+				</Address>
+				<Address category="mac">
+					<address>01:23:45:67:89:b2</address>
+				</Address>
+				<Address category="e-mail">
+					<address>example3@example.com</address>
+				</Address>
+				<Address category="e-mail">
+					<address>example4@example2.com</address>
+				</Address>
+			</Node>
+			<Service>
+				<portlist>245</portlist>
+				<protocol>epmap2</protocol>
+			</Service>
+		</Source>
+		<Target decoy="yes" interface="abxd0">
+			<Node>
+				<name>target.def</name>
+				<Address category="ipv4-addr">
+					<address>0.184.216.119</address>
+				</Address>
+				<Address category="ipv6-addr">
+					<address>0:db8::2:1</address>
+				</Address>
+				<Address category="ipv6-addr">
+					<address>2001:db8:a::123/64</address>
+				</Address>
+				<Address category="mac">
+					<address>00:00:45:67:89:ab</address>
+				</Address>
+				<Address category="mac">
+					<address>00:23:45:67:89:ed</address>
+				</Address>
+				<Address category="e-mail">
+					<address>example00@example.com</address>
+				</Address>
+				<Address category="e-mail">
+					<address>example000@example2.com</address>
+				</Address>
+			</Node>
+			<Service>
+				<portlist>24508</portlist>
+				<protocol>epmap0</protocol>
+			</Service>
+		</Target>
+		<Target decoy="no" interface="abxd1">
+			<Node>
+				<name>target2.def</name>
+				<Address category="ipv4-addr">
+					<address>0.0.216.119</address>
+				</Address>
+				<Address category="ipv6-addr">
+					<address>0:0::2:1</address>
+				</Address>
+				<Address category="ipv6-addr">
+					<address>00:db8:a::123/64</address>
+				</Address>
+				<Address category="mac">
+					<address>00:00:00:67:89:ab</address>
+				</Address>
+				<Address category="mac">
+					<address>00:23:45:67:89:fd</address>
+				</Address>
+				<Address category="e-mail">
+					<address>00example00@example.com</address>
+				</Address>
+				<Address category="e-mail">
+					<address>00example000@example2.com</address>
+				</Address>
+			</Node>
+			<Service>
+				<portlist>24508</portlist>
+				<protocol>epmap0</protocol>
+			</Service>
+		</Target>
+		<Classification text="something">
+			<Reference origin="unknown">
+				<name/>
+				<url>cve:CVE-2003-0605</url>
+			</Reference>
+			<Reference origin="unknown">
+				<name/>
+				<url>cve:CVE-2000-2202</url>
+			</Reference>
+		</Classification>
+		<Assessment>
+			<Confidence rating="numeric">1</Confidence>
+		</Assessment>
+		<CorrelationAlert>
+			<name/>
+			<alertident>e45</alertident>
+			<alertident>e56</alertident>
+			<alertident>e89</alertident>
+		</CorrelationAlert>
+		<AdditionalData>
+			<string>hello world</string>
+		</AdditionalData>
+	</Alert>
+</IDMEF-Message>

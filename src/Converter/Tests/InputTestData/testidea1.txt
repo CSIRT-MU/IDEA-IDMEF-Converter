@@ -1,0 +1,66 @@
+{
+   "Format": "IDEA0", 
+   "ID": "2E4A3926-B1B9-41E3-89AE-B6B474EB0A54",
+   "DetectTime": "2014-03-22T10:12:31Z",
+   "CreateTime": "2000-03-09T18:47:25+02:00",
+   "CorrelID": ["e45", "e56", "e89"], 
+   "Category": ["something", "Recon.Sniffing"],
+   "ConnCount": 633,
+   "Confidence": 1,
+   "Description": "EPMAPPER exploitation attempt", 
+   "Ref": ["cve:CVE-2003-0605", "cve:CVE-2000-2202"],
+   "Source": [ 
+      { 
+         "Hostname": ["abc.def", "hx.xh"],
+         "IP4": ["93.184.216.119"],
+         "IP6": ["2001:db8::2:1", "2001:db8:a::123/64"],
+         "MAC": ["01:23:45:67:89:ab", "01:23:45:67:89:cd"],
+         "Email": ["example@example.com", "example2@example2.com"],
+             "Proto": ["tcp", "epmap"],
+             "Port": [24508],
+         "Spoofed": true,
+         "Router": ["abxd"]
+      },
+      { 
+         "Hostname": ["abc.def2", "hx.xh2"],
+         "IP4": ["93.184.216.120"],
+         "IP6": ["2001:db8::2:22", "2001:db8:a::123/65"],
+         "MAC": ["01:23:45:67:89:a2", "01:23:45:67:89:b2"],
+         "Email": ["example3@example.com", "example4@example2.com"],
+         "Proto": ["tcp2", "epmap2"],
+         "Port": [245],
+         "Spoofed": false,
+         "Router": ["abxd2"]
+      }
+   ],
+   "Target": [
+      { 
+         "Hostname": ["target.def", "target.xh"],
+         "IP4": ["0.184.216.119"],
+         "IP6": ["0:db8::2:1", "2001:db8:a::123/64"],
+         "MAC": ["00:00:45:67:89:ab", "00:23:45:67:89:ed"],
+         "Email": ["example00@example.com", "example000@example2.com"],
+         "Proto": ["tcp0", "epmap0"],
+         "Port": [24508],
+         "Spoofed": true,
+         "Router": ["abxd0"]
+      },
+      {
+         "Hostname": ["target2.def", "target2.xh"],
+         "IP4": ["0.0.216.119"],
+         "IP6": ["0:0::2:1", "00:db8:a::123/64"],
+         "MAC": ["00:00:00:67:89:ab", "00:23:45:67:89:fd"],
+         "Email": ["00example00@example.com", "00example000@example2.com"],
+         "Proto": ["00tcp0", "epmap0"],
+         "Port": [24508],
+         "Spoofed": false,
+         "Router": ["abxd1"]
+      }
+   ],
+   "Attach": [
+      {
+	 "Content": "hello world"
+      }
+    ]
+}
+

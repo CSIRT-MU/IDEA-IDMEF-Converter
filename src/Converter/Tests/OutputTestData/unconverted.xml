@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<UnconvertedFromIDEA>
+	<Description>EPMAPPER exploitation attempt</Description>
+	<Target>
+		<Spoofed>yes</Spoofed>
+		<IP6>0:db8::2:1</IP6>
+		<IP6>2001:db8:a::123/64</IP6>
+		<Hostname>target.xh</Hostname>
+		<IP4>0.184.216.119</IP4>
+		<Email>example00@example.com</Email>
+		<Email>example000@example2.com</Email>
+		<Proto>tcp0</Proto>
+		<MAC>00:00:45:67:89:ab</MAC>
+		<MAC>00:23:45:67:89:ed</MAC>
+		<Port>24508</Port>
+	</Target>
+	<Target>
+		<Spoofed>no</Spoofed>
+		<IP6>0:0::2:1</IP6>
+		<IP6>00:db8:a::123/64</IP6>
+		<Hostname>target2.xh</Hostname>
+		<IP4>0.0.216.119</IP4>
+		<Email>00example00@example.com</Email>
+		<Email>00example000@example2.com</Email>
+		<Proto>00tcp0</Proto>
+		<MAC>00:00:00:67:89:ab</MAC>
+		<MAC>00:23:45:67:89:fd</MAC>
+		<Port>24508</Port>
+	</Target>
+	<Category>Recon.Sniffing</Category>
+	<ConnCount>633</ConnCount>
+	<Attach>
+		<Content>hello world</Content>
+	</Attach>
+	<Format>IDEA0</Format>
+	<Source>
+		<Spoofed>yes</Spoofed>
+		<IP6>2001:db8::2:1</IP6>
+		<IP6>2001:db8:a::123/64</IP6>
+		<Hostname>hx.xh</Hostname>
+		<IP4>93.184.216.119</IP4>
+		<Email>example@example.com</Email>
+		<Email>example2@example2.com</Email>
+		<Proto>tcp</Proto>
+		<MAC>01:23:45:67:89:ab</MAC>
+		<MAC>01:23:45:67:89:cd</MAC>
+		<Port>24508</Port>
+	</Source>
+	<Source>
+		<Spoofed>no</Spoofed>
+		<IP6>2001:db8::2:22</IP6>
+		<IP6>2001:db8:a::123/65</IP6>
+		<Hostname>hx.xh2</Hostname>
+		<IP4>93.184.216.120</IP4>
+		<Email>example3@example.com</Email>
+		<Email>example4@example2.com</Email>
+		<Proto>tcp2</Proto>
+		<MAC>01:23:45:67:89:a2</MAC>
+		<MAC>01:23:45:67:89:b2</MAC>
+		<Port>245</Port>
+	</Source>
+</UnconvertedFromIDEA>

@@ -1,0 +1,34 @@
+<IDMEF-Message version="1.0">
+    <Alert messageid="123d45">
+        <Analyzer analyzerid="5468">
+        </Analyzer>
+        <CreateTime ntpstamp="0xbc723b45.0xef449129">2
+            000-03-09T10:01:25.93464-05:00
+        </CreateTime>
+        <Classification ident="1" text="Phishing">
+            <Reference meaning="meaning of reference" origin="vendor-specific">
+                <name>Name of alert</name>
+                <url>ref.example.com</url>
+            </Reference>
+        </Classification>
+        <Source ident="2">
+            <Service>
+                <name>
+                    ServiceName
+                </name>
+                <port>
+                    154
+                </port>
+            </Service>
+        </Source>
+        <Source>
+            <Node>
+                <Address category="e-mail">
+                    <address>
+                        example@example.com
+                    </address>
+                </Address>
+            </Node>
+        </Source>
+    </Alert>
+</IDMEF-Message>
