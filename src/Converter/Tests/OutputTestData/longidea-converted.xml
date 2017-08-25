@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<IDMEF-Message version="1.0">
+	<Alert messageid="2E4A3926-B1B9-41E3-89AE-B6B474EB0A54">
+		<Analyzer name="com.example.specific"/>
+		<CreateTime ntpstamp="0xdc7e1da2.0x00000000">2017-03-23T10:10:42Z</CreateTime>
+		<DetectTime ntpstamp="0xdc7e10c6.0x00000000">2017-03-23T09:15:50Z</DetectTime>
+		<Source interface="router1" spoofed="no">
+			<Node>
+				<name>hostexample.com</name>
+				<Address category="ipv4-addr">
+					<address>93.184.216.119</address>
+				</Address>
+				<Address category="ipv6-addr">
+					<address>2001:db8::2:1</address>
+				</Address>
+				<Address category="ipv6-addr">
+					<address>2001:db8:a::123/64</address>
+				</Address>
+				<Address category="mac">
+					<address>01:23:45:67:89:ab</address>
+				</Address>
+				<Address category="mac">
+					<address>01:23:45:67:89:cd</address>
+				</Address>
+				<Address category="e-mail">
+					<address>example@example.com</address>
+				</Address>
+				<Address category="e-mail">
+					<address>example2@example2.com</address>
+				</Address>
+			</Node>
+			<Service>
+				<portlist>245</portlist>
+				<protocol>epmap2</protocol>
+			</Service>
+		</Source>
+		<Source interface="router1" spoofed="no">
+			<Node>
+				<name>hostexample2.com</name>
+				<Address category="ipv4-addr">
+					<address>93.184.216.119</address>
+				</Address>
+				<Address category="ipv4-addr">
+					<address>93.184.216.120</address>
+				</Address>
+				<Address category="ipv6-addr">
+					<address>2001:db8::2:1</address>
+				</Address>
+				<Address category="ipv6-addr">
+					<address>2001:db8:a::123/64</address>
+				</Address>
+				<Address category="mac">
+					<address>01:23:45:67:89:ab</address>
+				</Address>
+				<Address category="mac">
+					<address>01:23:45:67:89:cd</address>
+				</Address>
+				<Address category="e-mail">
+					<address>example@example.com</address>
+				</Address>
+				<Address category="e-mail">
+					<address>example2@example2.com</address>
+				</Address>
+			</Node>
+			<Service>
+				<portlist>210, 542</portlist>
+				<protocol>epmap2</protocol>
+			</Service>
+		</Source>
+		<Target decoy="yes" interface="router3">
+			<Node>
+				<name>targethostexample.com</name>
+				<Address category="ipv4-addr">
+					<address>0.184.216.119</address>
+				</Address>
+				<Address category="ipv6-addr">
+					<address>0:db8::2:1</address>
+				</Address>
+				<Address category="ipv6-addr">
+					<address>2001:db8:a::123/64</address>
+				</Address>
+				<Address category="mac">
+					<address>00:00:45:67:89:ab</address>
+				</Address>
+				<Address category="mac">
+					<address>00:23:45:67:89:ed</address>
+				</Address>
+				<Address category="e-mail">
+					<address>example00@example.com</address>
+				</Address>
+				<Address category="e-mail">
+					<address>example000@example2.com</address>
+				</Address>
+			</Node>
+			<Service>
+				<portlist>80</portlist>
+				<protocol>epmap</protocol>
+			</Service>
+		</Target>
+		<Target decoy="no" interface="router5">
+			<Node>
+				<name>example.com</name>
+				<Address category="ipv4-addr">
+					<address>0.0.216.119</address>
+				</Address>
+				<Address category="ipv6-addr">
+					<address>0:0::2:1</address>
+				</Address>
+				<Address category="ipv6-addr">
+					<address>00:db8:a::123/64</address>
+				</Address>
+				<Address category="mac">
+					<address>00:00:00:67:89:ab</address>
+				</Address>
+				<Address category="mac">
+					<address>00:23:45:67:89:fd</address>
+				</Address>
+				<Address category="e-mail">
+					<address>example00@example.com</address>
+				</Address>
+				<Address category="e-mail">
+					<address>example000@example2.com</address>
+				</Address>
+			</Node>
+			<Service>
+				<portlist>210, 542</portlist>
+				<protocol>epmap2</protocol>
+			</Service>
+		</Target>
+		<Classification text="Abusive.Spam">
+			<Reference origin="unknown">
+				<name/>
+				<url>http://www.example.com</url>
+			</Reference>
+			<Reference origin="unknown">
+				<name/>
+				<url>http://www.other.example.com</url>
+			</Reference>
+		</Classification>
+		<Assessment>
+			<Confidence rating="numeric">0.563</Confidence>
+		</Assessment>
+		<CorrelationAlert>
+			<name/>
+			<alertident>3E4A3926-B1B9-41E3-89AE-B6B474EB0A56</alertident>
+			<alertident>4E4A3926-B1B9-41E3-89AE-B6B474EB0A57</alertident>
+			<alertident>5E4A3926-B1B9-41E3-89AE-B6B474EB0A58</alertident>
+		</CorrelationAlert>
+		<AdditionalData>
+			<string>This is content of the attach</string>
+		</AdditionalData>
+		<AdditionalData>
+			<string>This is content of the attach</string>
+		</AdditionalData>
+		<AdditionalData>
+			<string>This is content of the attach</string>
+		</AdditionalData>
+	</Alert>
+</IDMEF-Message>

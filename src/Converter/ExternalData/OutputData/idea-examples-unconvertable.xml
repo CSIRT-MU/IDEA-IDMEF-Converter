@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<UnconvertableFromIDEA>
+<UnconvertableFromIDEAMessage><ConnCount>633</ConnCount><Source><Spoofed>unknown</Spoofed><IP4>93.184.216.119</IP4></Source><Format>IDEA0</Format><Target><Spoofed>unknown</Spoofed><IP4>93.184.216.0/24</IP4><Anonymised>True</Anonymised></Target><Description>Ping scan</Description></UnconvertableFromIDEAMessage>
+<UnconvertableFromIDEAMessage><ConnCount>633</ConnCount><Source><Proto>tcp</Proto><Spoofed>unknown</Spoofed><IP4>93.184.216.119</IP4><Port>24508</Port></Source><Format>IDEA0</Format><Target><Proto>tcp</Proto><Spoofed>unknown</Spoofed><Port>135</Port></Target><Description>EPMAPPER exploitation attempt</Description></UnconvertableFromIDEAMessage>
+<UnconvertableFromIDEAMessage><Source><URL>http://www.example.com/</URL><Proto>tcp</Proto><Proto>http</Proto><Spoofed>unknown</Spoofed><Type>OriginSpam</Type></Source><Format>IDEA0</Format><Description>Spam URL reference</Description></UnconvertableFromIDEAMessage>
+<UnconvertableFromIDEAMessage><Source><Proto>udp</Proto><Spoofed>unknown</Spoofed><Type>Open</Type><IP4>93.184.216.119</IP4></Source><Format>IDEA0</Format><Description>Open Recursive Resolver</Description></UnconvertableFromIDEAMessage>
+<UnconvertableFromIDEAMessage><Source><Proto>tcp</Proto><Spoofed>unknown</Spoofed><Type>Botnet</Type><Type>CC</Type><IP4>93.184.216.119</IP4><Port>6667</Port></Source><Format>IDEA0</Format><Description>Botnet Command and Control</Description></UnconvertableFromIDEAMessage>
+<UnconvertableFromIDEAMessage><Source><Proto>tcp</Proto><Proto>http</Proto><Spoofed>unknown</Spoofed><IP4>93.184.216.119</IP4></Source><Format>IDEA0</Format><Target><URL>http://www.example.com/search=%20union%20select%20password%20from%20users%20%2D%2D</URL><Spoofed>unknown</Spoofed></Target><Description>Suspicious search</Description></UnconvertableFromIDEAMessage>
+</UnconvertableFromIDEA>
